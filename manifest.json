@@ -3,12 +3,18 @@
   "description": "Whats harder, finishing your classes, or being poor",
   "version": "1.0",
   "manifest_version": 3,
-  "browser_action": {
-    "default_popup": "AgeMotivation.html",
-    "default_icon": "Sisyphus.jpeg"
-    ,"default_title": "Age Motivation"
-  },
+  
   "permissions":[
-    "activeTab"
-  ]
+    "activeTab",
+    "storage"
+  ],
+
+  "background": {
+    "service_worker": "AgeMotivation.js"
+  },
+
+  "action": {
+
+  }
+
 }
